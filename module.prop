@@ -1,0 +1,6 @@
+id=source-code-pro-font-magisk
+name=Source Code Pro font for Android
+version=1.010 (Roman, variable)
+versionCode=1000
+author=moposx
+description=This module will systemlessly replace the "Droid Sans Mono" font with the well-known "Source Code Pro" font. Have a try if you love that font!
