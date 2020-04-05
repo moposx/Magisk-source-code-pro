@@ -31,6 +31,16 @@
 
 - Aug 14, 2019 - v1.0  (Font version 1.010, Roman Variable)
 
+## Known Issues:
+Installing this module will cause that monospaced font won't be rendered in Firefox Preview. This is also reproducible on Firefox 68 for Android), and default font of the specific language (`sans-serif` or `serif`, change this in `about:config`) will be rendered instead.
+
+When this module is enabled:  
+![Enabling this module](./md-assets/enabling_this_module.jpeg)
+
+
+And when it is disabled:  
+![Disabling this module](./md-assets/disabling_this_module.jpeg)
+
 ## License
 
 - Adobe Source Code License [SIL Open Font License 1.1
