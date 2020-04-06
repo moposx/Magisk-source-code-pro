@@ -8,8 +8,8 @@
 
 ## Details about this module
 
-- Font file are renamed from with Adobe's latest release(`Roman 1.010 variable`).
-- For monospaced font, Android only support one font weight and one font style:
+- Font file are renamed from with Adobe's latest [release](https://github.com/adobe-fonts/source-code-pro/releases/tag/2.030R-ro%2F1.050R-it) of non-variable Source Code Pro font(`Roman 2.030`).
+- For monospaced font, Android supports one font weight and one font style by default:
   ![monospaced font config in fonts.xml](./md-assets/monospaced-font-config.png)
   Considering the compatibility and to make least trouble when user wants to migrate to other fonts, I give up the idea to install a modified `fonts.xml`.
 - Should not conflict with other font packs. (There's now no font packs which replace the total `/system/fonts` directory I guess.)
@@ -18,6 +18,7 @@
 
 - Using the lastest Magisk release is recommended.
 - Download, flash, then reboot to enjoy it!
+- **Necessary for Firefox Users:** you will have to manually set default monospace font of specific langugages in `about:config`, from `Droid Sans Mono` to `Source Code Pro`, or the font won't be rendered in Firefox. Check out the reason [here](https://github.com/mozilla-mobile/fenix/issues/9723).
 
 ## Preview
 
@@ -29,16 +30,19 @@
 
 ## Changelog
 
+- Apr 6, 2020 -v1.01 (Font version 2.030 Roman)
 - Aug 14, 2019 - v1.0  (Font version 1.010, Roman Variable)
 
-## Known Issues:
-Installing this module will cause that monospaced font won't be rendered in Firefox Preview. This is also reproducible on Firefox 68 for Android), and default font of the specific language (`sans-serif` or `serif`, change this in `about:config`) will be rendered instead.
+## Known Issues
 
-When this module is enabled:  
+This problem has already been solved.  
+~~Installing this module will cause that monospaced font won't be rendered in Firefox Preview. This is also reproducible on Firefox 68 for Android), and default font of the specific language (`sans-serif` or `serif`, change this in `about:config`) will be rendered instead.~~
+
+~~When this module is enabled:~~  
 ![Enabling this module](./md-assets/enabling_this_module.jpeg)
 
 
-And when it is disabled:  
+~~And when it is disabled:~~  
 ![Disabling this module](./md-assets/disabling_this_module.jpeg)
 
 ## License
